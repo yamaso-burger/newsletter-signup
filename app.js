@@ -72,6 +72,6 @@ app.post('/failure', (req, res)=>{
 // List Id
 // 854863a56c
 
-app.listen(port, ()=>{
+app.listen(process.env.PORT || port, ()=>{
     console.log("Server is running on port " + port);
 });
