@@ -46,24 +46,35 @@
 
     <!-- Custom styles for this template -->
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body class="text-center">
 
     <main class="form-signin">
-        <form>
+        <form action="/" method="post">
             <img class="mb-4" src="images/hamburger.png" alt="" width="72" height="57">
             <h1 class="h3 mb-3 fw-normal">Signup to My newsletter!!</h1>
 
-            <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
+            <div class="inputs">
+
+                <div class="form-floating">
+                    <input name="firstName" type="text" class="form-control top" id="floatingInput" placeholder="First name">
+                    <label for="floatingInput">First Name</label>
+                </div>
+                <div class="form-floating">
+                    <input name="lastName" type="text" class="form-control middle" id="floatingInput" placeholder="Last name">
+                    <label for="floatingInput">Last Name</label>
+                </div>
+                <div class="form-floating">
+                    <input name="email" type="email" class="form-control bottom" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                </div>
             </div>
 
 
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-            <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign Me Up!</button>
+            <p class="mt-5 mb-3 text-muted">&copy; Soichiro Yamauchi 2022–2024</p>
         </form>
     </main>
 
